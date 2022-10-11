@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Label y caja de datos</h1>
+    <label for="">Nombre</label> <!-- label etiqueta para señalar la caja que recibe los datos -->
+    <input type="text" name="Nombre" id="Nombre" value=""> <!--esta es la caja para recibir los datos de teclado
+    input recepcion de texto  en {value} se puede dejar un valor predeterminado -->
+    <label for="">Apellido</label> 
+    <input type="text" name="Apellido" id="Apellido" value="REPTIL">
+
+    <h1>FORMULARIO 1</h1>
+
+    <h3>Nombre de etiquete y caja de captura</h3>
+
+    <form action="" method="get"><!-- form para formulario y en action se pondria la url y en methd se utiliza 
+    post o get para el manejo de informacion  con post no se ve la informacion enviada pero con ger podemos ver
+    la informacion capturada en la barra del navegador-->
+        <label for="">Nombre</label>
+        <input type="text" name="Nombre1" id="Nombre1" value="" required placeholder="Nombre"> <!--para que un campo sea obligatorio se adicion el atributo required-->
+        <label for="">Apellido</label>
+        <input type="text" name="Apellido1" id="Apellido1" value="" required placeholder="Apellido"><!--para ingresar un texto de guia al usuaario se utiliza la 
+        etiqueta placeholder-->
+        <label for="">Edad</label>
+        <input type="number" name="Edad" id="Edad" value="" min="0" placeholder="Edad"><!--caja de captura numero-->
+        <br><br><br>
+        <label for="">Usuario</label>
+        <input type="text" name="Usuario" id="Usuario" value="" required placeholder="Usuario">
+        <label for="">Password</label><!--forma de generar caja y etiqueta para contraseña.-->
+        <input type="password" name="Pasword" id="Pasword" value="" required placeholder="Contraseña">
+
+        <br>
+        <h3>Forma para seleccionar un valor </h3>
+        <!--forma de seleccion de un solo valor--> 
+        <label for="">Sexo</label>
+        <select name="sexo" id="sexo"> 
+            <option value="masculino">Masculino</option>
+            <option value="femenino">femenino</option> 
+        </select>
+        <br>
+        <!--forma de seleccion de un solo valor-->
+        <h3>seleccion con la etiqueta select y option</h3> 
+        <label for="">Tipo_Documento</label>
+        <select name="tipo_documento" id="tipo_documento"> 
+            <option value="cedula_ciudadania">Cédula_Ciudadanía</option>
+            <option value="cedula_extranjeria">Cédula_Extranjería</option>
+            <option value="pasaporte">Pasaporte</option>
+        </select>
+        <br>
+        <h3>Opción en un grupo</h3>
+        <label for="">Sistema_Operativo</label>
+        <select name="sistema_operativo" id="sistema_operativo">
+            <optgroup label="Windows">
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </optgroup>
+            <optgroup label="linux">
+                <option value="fedora">Fedora</option>
+                <option value="Ubuntu">Ubuntu</option>
+            </optgroup>
+            
+        </select>
+        <br>
+        <h3>caja para ingresar mas texto</h3>
+        <label for="">ingrese opinión</label><br>
+        <textarea name="parrafo" id="parrafo" cols="20" rows="1"></textarea>
+         
+        <br>
+        <br>
+        <br>
+        <h3>Forma de selección con la etiqueta radio</h3>
+        <label for="">Tipo_Documento</label>
+        <input type="radio" name="tipo_id" value="cedula_ciudadania">Cedula_ciudadania
+        <input type="radio" name="tipo_id" value="cedula_extranjeria">Cedula_extranjeria
+        <input type="radio" name="tipo_id" value="pasaporte">Pasaporte
+        <br>
+        <h3>Seleccion con la etiqueta checkbox</h3>
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="leer" checked>leer <!--si se desea de manera predeterminada un opcion se adiciona el atributo checked-->
+        <input type="checkbox" name="caminar">Caminar
+        <input type="checkbox" name="video_juegos">video_juegos
+        <input type="checkbox" name="musica">musica
+        <br>
+        <h3>Seleccion con la etiqueta select y multiple</h3>
+        <label for="">Fruta favorita</label>
+        <br>
+        <select name="frutas" id="frutas" size="3" multiple><!--muestra una caja con las diferentes opciones y size es la cantidad de opciones que puede visualizar 
+        el usuario-->
+            <option value="Naranja">Naranja</option>
+            <option value="Piña">Piña</option>
+            <option value="Mandarina">Mandarina</option>
+            <option value="Sandia">Sandia</option>
+            <option value="Ciruela">Ciruela</option>
+           
+
+
+
+
+
+        </select>
+
+
+
+
+
+
+        
+
+        
+
+        <input type="submit" name="Enviar" value="Enviar"> <!--este submit es un tipo de buton o boton en este
+        caso es para enviar la informacíon-->
+        <input type="button" name="br_ver" value="Ver"> <!--este boton depende del action del formulario-->
+        <br>
+        <input type="reset" name="limpiar" value="limpiar"><!--con este tipo de boton se pude limpiar el formato o restablecer  reset -->
+       
+
+
+        </select>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario2</title>
+</head>
+
+<body>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+        /* Esto es el importe de https://fonts.google.com/specimen/Pacifico para el cambio de letra */
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 0.5%;
+            border: 1px solid black;
+            /*de esta manera se puede modificar el borde, grosor y color */
+            background-color: pink;
+            border-radius: 20px;
+            /*esto se utiliza para redondear los bordes */
+            margin-bottom: 2%;
+            margin-top: 1%;
+            color: blue;
+            font-family:'Franklin Gothic Medium';
+        }
+
+        #contenedor {
+            margin: auto;
+            border-style: solid;
+            border-color: blue;
+            border-radius: 10px;
+            width: 50%;
+            height: 100%;
+            background-color: #99ffcc;
+            padding: 1%;
+
+
+        }
+
+        textarea {
+            width: 100%;
+            height: 20%;
+            border-radius: 10px;
+            padding: 1%;
+            resize: none;
+            /*con este comando se quita la posibilidad de ampliacion en el cuadro de texarea el cual aparece en la parte inferior derecha*/
+            font-size: 20px;
+            /*font_size da el tamaño de letra insertada en el formulario*/
+            background-color:aqua;
+            margin-bottom: 2%;
+            font-family: 'Bungee Spice', cursive;
+        }
+
+        input[type=submit] {
+
+            width: 50%;
+            padding: 2%;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightblue;
+            font-size: 30px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 25%;
+            color: blueviolet;
+            font-family: 'Gill Sans';
+
+
+        }
+
+        input[type=submit]:hover {
+            /* al pasar el mouse se vea este efecto */
+            background-color: black;
+            color: white;
+            padding: 2%;
+
+        }
+
+        #parrafo{
+            margin: 2% 10%;
+            width: 80%;
+            /* margin: auto; */
+            text-align: justify;
+
+
+            border-style: solid;
+            border-color: blueviolet;
+            background-color: aquamarine;
+            font-family: 'Pacifico', cursive;
+            /* esta es la implementacion de la letra importada https://fonts.google.com/specimen/Pacifico */
+
+
+            /* font-family: fantasy;  */
+            /* con el font-family se le da el tipo de letra deseado */
+            font-size: 20px;
+            color:blue;
+            padding: 1%;
+        
+
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <div id="contenedor">
+        <form action="" method="get" name="">
+            <label for="nombre">Nombre</label>
+            <!--con el for se enlaza el label con el input por medio de id-->
+            <input type="text" name="nombre" id="nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellid" id="apellido">
+            <label for="ciudad">Cidudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Bogota">Bogotá</option>
+                <option value="Medellin">Medellín</option>
+                <option value="tunja">Tunja</option>
+                <option value="villavicencio">Villavicencio</option>
+                <option value="cartagena">Cartagena</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="cali">Cali</option>
+                <option value="neiva">Neiva</option>
+                <option value="tulua">Tulua</option>
+            </select>
+            <textarea name="descipcionp" id="descipcionp" cols="30" rows="3"
+                placeholder="Describa su personalidad"></textarea>
+            <br>
+            <input type="submit" name="Enviar" id="Enviar" value="Enviar">
+
+
+        </form>
+
+    </div>
+    <div id="parrafo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eum ducimus nemo eius. Corrupti autem unde, recusandae laudantium culpa eaque 
+            soluta exercitationem dignissimos aperiam tempora cum, corporis placeat maiores nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vitae eos sed facilis, officiis nam eveniet nisi? Ratione accusamus neque sapiente doloremque ab iusto odio, soluta dolorum fuga repudiandae 
+            distinctio ex.</p>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+p{
+    color: red; /* en este caso sele da color a todas las etiquetas p con esta sentencia */
+    text-align: center; /* este atributo es para centrar -  o dejar a la derecha o izquierda con center, left, right*/
+}
+li {
+    color:#FF00D5; /* en este caso sele da color a todas las etiquetas li con esta sentencia */
+    text-align: right;
+}
+.clase{ /* con la etiqueta . y cualquier nombre que se le asigne en este caso clase*/
+
+    color:#4E4EA3;
+    text-align: center;
+
+
+}
+#conid{ /*con id se pude hacer cambios com en el caso de . class pero el id es mejor utilizarlo para javascript*/
+
+    color: #EC6608;
+    text-align: left;
+
+
+}
+.loquesea{
+    color:blue;
+    text-align: center;
+}
+
+#loquesea{
+
+    color: orchid;
+    text-align: justify;
+
+
+}
+
+.color{
+    color: blue;
+
+
+
+}
+#alinear{
+    text-align: justify;
+   
+}
+.colorsecundario{
+    color: #4E4EA3;
+}
