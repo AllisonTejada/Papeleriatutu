@@ -1,0 +1,16 @@
+#datos{
+    /* border-style: solid;
+    border-color: red; */
+    border-radius: 20px;
+    width: 60%;
+    background-color: #0071DC;
+    color: white;
+    text-align: justify;
+    padding: 2% 2% 2% 2%;
+    margin: 5% 15% 5% 15%;
+
+}
+
+#centrado{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+#formato1{
+    height: 600px;
+    
+    
+
+
+}
+#formato2{
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    /* border-color: blue; */
+    padding: 2% 2% 2% 2%;
+    margin: 3% 25% 10% 25%;
+    background-color: #0071DC;
+    color: white;
+    
+}
+
+input{
+
+    text-align: center;
+    border-style: solid;
+    border-color: #0071DC;
+    border-radius: 10px;
+    padding: 2% 1% 1% 1%;
+    width: 30%;
+    margin: 1%;
+
+}
+
+label{
+
+    font-family: cursive;
+    font-size: 120%;
+}

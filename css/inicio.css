@@ -1,0 +1,15 @@
+#tabla{
+    /* border-style: solid;
+    border-color: red; */
+    margin: 1% 0 1% 4%;
+}
+
+#manejoDeDatos{
+    border-style: solid;
+    border-color: #0071DC;
+    font-family: cursive;
+    font-size: 120%;
+    color: white;
+    background-color: #0071DC;
+
+}
