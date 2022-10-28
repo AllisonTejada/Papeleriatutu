@@ -5,6 +5,12 @@ const app=express()
 const indexroutes=require("./routes/index")
 
 
+// pilas se debe instalar cors --- en consola ---  npm install cors
+let cors=require("cors")
+app.use(cors())
+
+
+
 
 //sirve para probar la conexion a la db
 //cadena de conexion
@@ -41,6 +47,13 @@ app.use("/",indexroutes)
 
 app.listen(3005,function(){
 	console.log("Api en el puerto 3005")
+
+
+})
+
+app.use((req, res, next)=>{
+
+	res.setHeader("Access-Control-Allow-Origin", "*");
 
 
 })

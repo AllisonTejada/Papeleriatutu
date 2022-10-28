@@ -129,7 +129,9 @@ router.post("/showuserParametros",urlcodeParser,function(req,res){
 
 //Actualizar registros por cliente_id
 router.post("/actualizar_registros",urlcodeParser, function (req, res) {
+  var cliente_telefono_=req.body.cliente_telefono;
   var cliente_email_ = req.body.cliente_email;
+  var cliente_apellido_=req.body.cliente_apellido;
    var cliente_nombre_ = req.body.cliente_nombre;
   var cliente_clave_ = req.body.cliente_clave;
    const cliente_id_ = req.body.cliente_id;
@@ -138,7 +140,7 @@ router.post("/actualizar_registros",urlcodeParser, function (req, res) {
         if (err) return res.send(err)    
 
            const x="";
-           const consulta=x.concat('update cliente set cliente_nombre="',cliente_nombre_,'", cliente_email="',cliente_email_,'", cliente_clave="',cliente_clave_,'" where cliente_id="',cliente_id_,'"')
+           const consulta=x.concat('update cliente set cliente_nombre="',cliente_nombre_,'", cliente_apellido="',cliente_apellido_,'" , cliente_email="',cliente_email_,'" , cliente_telefono="',cliente_telefono_,'", cliente_clave="',cliente_clave_,'" where cliente_id="',cliente_id_,'"')
       console.log(consulta) 
         conn.query(consulta, [req.body],(err, result,fields) => {
                  if (err)
@@ -159,7 +161,7 @@ router.post("/actualizar_registros",urlcodeParser, function (req, res) {
 });
 
 //Eliminar registro por cliente_id
-router.post("/borrar_cliente", function (req, res) {
+router.post("/borrar_cliente",urlcodeParser, function (req, res) {
    const cliente_id_ = req.body.cliente_id;
     
 
@@ -170,9 +172,19 @@ router.post("/borrar_cliente", function (req, res) {
            const consulta=x.concat('delete from cliente where cliente_id="',cliente_id_,'"')
     //  console.log(consulta) 
         conn.query(consulta, [req.body],(err, result,fields) => {
-                if (err) return res.send(err)  
-               	   console.log(result) 
-                   res.status(200).send('registro eliminado')
+                // if (err) return res.send(err)  
+               	//    console.log(result) 
+                //    res.status(200).send('registro eliminado')
+				if(err)
+				{res.send({eliminado:0})}
+				else{
+					if(res.status(200)){
+						res.status(200).send({eliminado:1})
+						console.log("Registro eliminado")
+					}
+				}
+
+				
             })
      }) 
 
