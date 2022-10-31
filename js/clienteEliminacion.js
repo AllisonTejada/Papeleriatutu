@@ -1,51 +1,38 @@
-function clienteEliminado(){
+function borrarcliente(){
 
     // alert("funcion andandoS")
+
+   numero=parseInt(document.getElementById("cliente_id").value)
     
     var datos={
+        "cliente_id":$("#cliente_id").val()
+   }
+   
+// console.log(JSON.stringify({x2}));
+console.log(datos);
+$.ajax({
+   type:"post",
+   url:"http://localhost:3005/delete",
+   data:datos,
+   dataType:"json",
+   success:function(data){
+       if(data.eliminado==1)
+       {
+           console.log('Usuario Eliminado Satisfactoriamente')
+           alert('Usuario Eliminado Satisfactoriamente')
+           // location.href='../index.html'
+
+       }
+       else
+       {
+           console.log('Error')
+           alert('Error - Usuario No Eliminado')
+
+       }
 
 
-     "cliente_id":document.getElementById("cliente_id").value,
-     
+   }
 
-    }
-
-    console.log(datos)
-
-    $.ajax({
-
-        type:"post",
-        url:"http://localhost:3005/borrar_cliente",
-        data:datos,
-        dataType:"json",
-        success:function(data){
-         console.log(data)
-         if(data.eliminado===1)
-         {
-             alert("Cliente Eliminado")
-             location.href="../index.html"
-             console.log("Cliente eliminado")
-         }
-         else{
-             console.log("Cliente NO eliminado")
-             alert("Error No cliente no eliminado")
- 
-         }
- 
- 
- 
- 
-        }
- 
- 
- 
- 
- 
-     })
-
-
-
-
-
+})
 
 }

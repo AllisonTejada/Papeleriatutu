@@ -3,6 +3,7 @@ const mysql=require("mysql")
 const myconn=require("express-myconnection")
 const app=express()
 const indexroutes=require("./routes/index")
+// const indexroutes=require("./routes/index_administrador")
 
 
 // pilas se debe instalar cors --- en consola ---  npm install cors
@@ -18,7 +19,7 @@ const conexion=mysql.createConnection({
 	host:"localhost",
 	port:3308,
 	user:"root",
-	password:"sablereptil2009",
+	password:"samael0428",
 	database:"papeleriatutu2"
 });
 
@@ -28,7 +29,7 @@ conexion.connect(function(err){
 		console.log("Error de conexion:" +err.stack)
 		return;
 	}else {
-		console.log(" Conexion exitosa")
+		console.log(" Conexion exitosa # de Identificador "+conexion.threadId)
 	
 	}
 	
@@ -37,7 +38,7 @@ const conexion_2={
 	host:"localhost",
 	port:3308,
 	user:"root",
-	password:"sablereptil2009",
+	password:"samael0428",
 	database:"papeleriatutu2"
 };
 

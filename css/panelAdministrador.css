@@ -1,0 +1,29 @@
+#formato1{
+    height: 1200px;
+
+}
+
+#formato2{
+    /* border-style: solid;
+    border-color: black; */
+    
+    width: 80%;
+    height: 700px;
+    text-align:left;
+    border-style: solid;
+    border-radius: 20px;
+    /* border-color: blue; */
+    padding: 2% 2% 2% 2%;
+    margin: 3% 10% 10% 10%;
+    background-color: #0071DC;
+    color: white;
+
+}
+
+.botones_panel{
+
+    
+   text-align:right;
+   background-color: aqua;
+
+}

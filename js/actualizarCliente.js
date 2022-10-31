@@ -31,8 +31,8 @@ function actualizarCliente(){
          if(data.save===1)
          {
              alert("Cliente actualizado")
-             location.href="../index.html"
-             console.log("Cliente Actualizado")
+             
+             console.log(datos)
          }
          else{
              console.log("no actualizado")

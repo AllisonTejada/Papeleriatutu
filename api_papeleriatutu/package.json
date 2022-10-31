@@ -15,5 +15,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "Primer script para la API"
+  "description": "Primer script para la API",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
